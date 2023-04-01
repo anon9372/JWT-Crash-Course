@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { check, validationResult } = require("express-validator");
 const JWT = require("jsonwebtoken")
 const bcrypt = require('bcrypt');
-const users = require("./models/index")
+const users = require("../models/index")
 
 // SIGNUP
 router.post("/signup", [
