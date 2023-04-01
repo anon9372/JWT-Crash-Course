@@ -4,7 +4,7 @@ module.exports = async (req, res, next) => {
     const token = req.header('x-auth-token')
 
     // CHECK IF WE EVEN HAVE A TOKEN
-    if(!token){
+    if (!token) {
         res.status(401).json({
             errors: [
                 {
